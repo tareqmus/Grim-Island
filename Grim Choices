@@ -1,0 +1,52 @@
+print('''
+ ...
+             ;::::;
+           ;::::; :;
+         ;:::::'   :;
+        ;:::::;     ;.
+       ,:::::'       ;           OOO\
+       ::::::;       ;          OOOOO\
+       ;:::::;       ;         OOOOOOOO
+      ,;::::::;     ;'         / OOOOOOO
+    ;:::::::::`. ,,,;.        /  / DOOOOOO
+  .';:::::::::::::::::;,     /  /     DOOOO
+ ,::::::;::::::;;;;::::;,   /  /        DOOO
+;`::::::`'::::::;;;::::: ,#/  /          DOOO
+:`:::::::`;::::::;;::: ;::#  /            DOOO
+::`:::::::`;:::::::: ;::::# /              DOO
+`:`:::::::`;:::::: ;::::::#/               DOO
+ :::`:::::::`;; ;:::::::::##                OO
+ ::::`:::::::`;::::::::;:::#                OO
+ `:::::`::::::::::::;'`:;::#                O
+  `:::::`::::::::;' /  / `:#
+   ::::::`:::::;'  /  /   `#
+''')
+print("Welcome to Grim Island.")
+print("Your mission is to find the sole survivor.")
+print("This is a matter of life or death. Choose wisely.")
+
+choice1 = input('You can only go "left" or "right". Which way do you choose? ').lower()
+
+if choice1 == "left":
+    print("Very wise choice. You may proceed.")
+    choice2 = input('You can save the survivor across the river or leave the island and save yourself. Will you "save" or "leave" the survivor? ').lower()
+
+    if choice2 == "save":
+        print("You are a brave one. You may proceed.")
+    else:
+        print("You are a coward and were finished by the spiders. Game over.")
+
+    choice3 = input('There is a spider chasing the both of you! Choose whether to "run" away from or "fight" the fierce spider. ').lower()
+
+    if choice3 == "run":
+        print("The spider caught both of you in their web and devoured each of you slowly. Game over.")
+    elif choice3 == "fight":
+        choice4 = input('You managed to fend off the spider but you have to sever a limb in order to survive. Are you willing to sever it? "yes" or "no"? ').lower()
+
+        if choice4 == "yes":
+            print("You have saved the survivor and you have lost your limb. You are truly a savior.")
+            print("You have gained the respect of the Grim Reaper and he has restored your limb.")
+        else:
+            print("You have lost your limb and you have been eaten by the spider while the survivor is waiting their turn. Game over.")
+else:
+    print("You have fallen into The Grim Reaper's trap. Game Over.")
